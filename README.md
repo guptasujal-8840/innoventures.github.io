@@ -235,7 +235,7 @@
       <a href="#">ABOUT</a>
 	    <a href="#">SERVICE</a>
       <a href="#">CONTACT US</a>
-      <a href="http://127.0.0.1:5500/home.html/utk.html">SIGN UP</a>
+      <a href="utk.html">SIGN UP</a>
       <a href="">LOGIN</a>
     </nav>
   </header>
