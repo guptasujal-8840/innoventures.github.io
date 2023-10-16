@@ -1,79 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script> 
-        function fa(){ 
-        if(a.value=="" || b.value=="" || c.value==""){ 
-        f() 
-        document.getElementById("a").style.border="3px solid red" 
-        document.getElementById("b").style.border="3px solid red" 
-        document.getElementById("c").style.border="3px solid red" 
-        document.getElementById("d").style.border="3px solid red" 
-        bt.value="First Fill Information" 
-        } 
-        else{ 
-        document.getElementById("a").style.border="3px solid green" 
-        document.getElementById("b").style.border="3px solid green" 
-        document.getElementById("c").style.border="3px solid green" 
-        document.getElementById("d").style.border="3px solid green" 
-        bt.value="Login Successful" 
-        bt.style.left="120px"; 
-        } 
-        } 
-        flag=1 
-        function f(){ 
-        if(flag==1){ 
-        bt.style.left="210px" 
-        flag=2 
-        } 
-        else if(flag==2){ 
-        bt.style.left="80px" 
-        flag=1 
-        } 
-        } 
-        </script> 
-</head>
 <body background="https://rmscloud.com/hubfs/RMS%20GLB%20Website%2022/RMS_2022/images/hero_bg.jpg">
-<font size="5">
-    <h1 style="text-align:center">SIGNUP FORM FOR PATIENTS</h1> 
-</font>
-    <p>Create Your ID</p> 
-<input class="in" type="text" placeholder="Enter id" id="a"/> 
-<p>Create Your Password</p> 
-<input class="in" type="password" placeholder="Enter password" id="b"/> 
-<p>Enter Your Age</p> 
-<input class="in" type="text" placeholder="Enter Age" id="c"/> 
-<p>Enter Your Contact No.</p> 
-<input class="in" type="text" placeholder="Enter Your Contact No. " id="d"/> 
-<br> 
-<br>
-<input type="submit" onmouseenter="fa()"  id="bt" /> 
-<br>
-<br>
-<div id="google_translate_element"></div>
-<script src="http://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit"></script>
-<script>
-function googleTranslateElementInit(){
-    new google.translate.TranslateElement(
-        {pageLanguage: 'en'},
-        'google_translate_element'
-    );
-}
-</script>
-<font size="5">
-<h1 style="text-align:center" font color="yellow">INNOVENTURERS &#128104;&#8205;&#127891;</h1> 
-</font>
-<marquee behavior="alternate" direction="left" scroll amount="10">
-<font size="5" color="Green">WELCOME IN MEDICONNECT &#128104;&#8205;&#9877;&#65039;</font>
-</marquee>
+<font size="3">
+    <title>Signup and Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
+        h1 {
+            text-align: center;
+            color: #333;
+        }
 
-</div> 
+        .tab {
+            display: none;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+cursor: pointer;
+        }
+
+        button#signupTabBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button#loginTabBtn {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #008CBA;
+            color: white;
+            font-weight: bold;
+        }
+ input[type="submit"]:hover {
+            background-color: #005f7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to no 1 Healthcare Connect Site</h1>
+        <div>
+            <button id="signupTabBtn" onclick="openTab('signupTab')">Signup</button>
+            <button id="loginTabBtn" onclick="openTab('loginTab')">Login</button>
+        </div>
+        
+        <div id="signupTab" class="tab">
+            <h2>Signup</h2>
+            <form action="signup.php" method="post">
+		<div class="form-group">
+                    <label for="FIRST NAME">FIRST NAME:</label>
+                    <input type="text" placeholder="ENTER YOUR FIRST NAME" id="FIRST NAME" name="FIRST NAME" required>
+                </div>
+                <div class="form-group">
+                    <label for="LAST NAME">LAST NAME:</label>
+                    <input type="text" placeholder="ENTER YOUR LAST NAME" id="FIRST NAME" name="FIRST NAME" required>
+                </div>
+		<div class="form-group">
+                    <label for="EMAIL ID">EMAIL ID:</label>
+                    <input type="text" placeholder="ENTER YOUR EMAIL ID" id="EMAIL ID" name="EMAIL ID" required>
+                </div>
+		<div class="form-group">
+                    <label for="USERNAME">USERNAME:</label>
+                    <input type="text"placeholder="CREATE YOUR USERNAME" id="USERNAME" name="USERNAME" required>
+                </div>
+                <div class="form-group">
+                    <label for="PASSWORD">PASSWORD:</label>
+                    <input type="password" placeholder="CREATE YOUR PASSWORD" id="PASSWORD" name="PASSWORD" required>
+                </div>	
+		<div class="form-group">
+                    <label for="CONFIRM PASSWORD">CONFIRM PASSWORD:</label>
+                    <input type="text" placeholder="CONFIRM YOUR PASSWORD" id="CONFIRM PASSWORD" name="CONFIRM PASSWORD" required>
+                </div>
+ <div class="form-group">
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+        </div>
+
+        <div id="loginTab" class="tab">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="login_USERNAME">USERNAME:</label>
+                    <input type="text" placeholder="ENTER YOUR USERNAME" id="login_USERNAME" name="login_USERNAME" required>
+                </div>
+                <div class="form-group">
+                    <label for="login_PASSWORD">PASSWORD:</label>
+                    <input type="password" placeholder="ENTER YOUR PASSWORD" id="login_PASSWORD" name="login_PASSWORD" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+	
+    <script>
+        function openTab(tabId) {
+var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabId).style.display = "block";
+        }
+
+        // Show the signup tab by default
+        openTab('signupTab');
+
+    </script>
+<html lang="en-US">
  
+
+<head>
+
+    <title>
+
+        How To Add Google Translate
+
+        Button On Your Webpage ?
+
+    </title>
+
+</head>
+ 
+
+<body>
+
+        Translate this page in
+
+        your preferred language:
+
+    </p>
+ 
+
+    <div id="google_translate_element"></div>
+<!DOCTYPE html>
+
+<html lang="en-US">
+ 
+
+<head>
+
+    <title>
+
+        How To Add Google Translate
+
+        Button On Your Webpage ?
+
+    </title>
+
+</head>
+ 
+
+<body>
+ 
+
+    <div id="google_translate_element"></div>
+ 
+
+    <script type="text/javascript">
+
+        function googleTranslateElementInit() {
+
+            new google.translate.TranslateElement(
+
+                {pageLanguage: 'en'},
+
+                'google_translate_element'
+
+            );
+
+        }
+
+    </script>
+ 
+
+    <script type="text/javascript"
+
+            src=
+"https://translate.google.com/translate_a/element.js?
+
+cb=googleTranslateElementInit">
+
+    </script>
+ 
+
+    <p>
+
+        Translate the content of this
+
+        page by selecting a language in the
+
+        select box.
+
+    </p>
+<font size="4">
+<h1 style="text-align:right" font color="yellow">INNOVENTURERS &#128104;&#8205;&#127891;</h1> 
+</font>
 </body>
 </html>
+   
