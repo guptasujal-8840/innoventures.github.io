@@ -227,7 +227,7 @@
   </style>
 </head>
 
-<body background="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/328658568/original/981b2c1ce61151056b6a942b9298980ea40ff1bb/your-desired-background-design.jpg">
+<body background="https://png.pngtree.com/background/20210709/original/pngtree-ppt-memphis-round-soft-background-picture-image_948039.jpg">
   <header class="header">
     <a href="#" class="logo">MediConnect</a>
     <nav class="nav-items">
