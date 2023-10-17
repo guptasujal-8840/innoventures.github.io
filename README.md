@@ -234,7 +234,7 @@
       <a href="">HOME</a>
       <a href="about.html">ABOUT</a>
 	    <a href="service.html">SERVICE</a>
-      <a href="#">CONTACT US</a>
+      <a href="contact.html">CONTACT US</a>
       <a href="button.html">SIGN UP/LOGIN</a>
     </nav>
   </header>
@@ -280,7 +280,7 @@
         <span>More Info</span>
         <a href="#">Home</a>
         <a href="about.html">About</a>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </div>
       <div class="links">
         <span>Social Links</span>
