@@ -279,7 +279,7 @@
       <div class="links">
         <span>More Info</span>
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="#">Contact</a>
       </div>
       <div class="links">
