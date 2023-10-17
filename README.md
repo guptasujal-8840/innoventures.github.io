@@ -232,7 +232,7 @@
     <a href="#" class="logo">MediConnect</a>
     <nav class="nav-items">
       <a href="">HOME</a>
-      <a href="#">ABOUT</a>
+      <a href="about.html">ABOUT</a>
 	    <a href="#">SERVICE</a>
       <a href="#">CONTACT US</a>
       <a href="button.html">SIGN UP/LOGIN</a>
