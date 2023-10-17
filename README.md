@@ -233,7 +233,7 @@
     <nav class="nav-items">
       <a href="">HOME</a>
       <a href="about.html">ABOUT</a>
-	    <a href="#">SERVICE</a>
+	    <a href="service.html">SERVICE</a>
       <a href="#">CONTACT US</a>
       <a href="button.html">SIGN UP/LOGIN</a>
     </nav>
